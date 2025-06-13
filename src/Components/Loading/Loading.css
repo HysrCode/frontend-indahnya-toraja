@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@300&family=Poppins:wght@200;400;500;600;700;900&display=swap");
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  /* Font ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Fullscreen */
+  background-color: #f9f9f9; /* Background warna */
+  font-family: Arial, sans-serif;
+}
+.loading-container .spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid var(--primaryColor); /* Warna biru pada bagian atas */
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Animasi berputar */
+  margin-bottom: 10px;
+}
+.loading-container p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Keyframes untuk animasi spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=Loading.css.map */

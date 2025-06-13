@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Playpen+Sans:wght@300&family=Poppins:wght@200;400;500;600;700;900&display=swap");
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  /* Font ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  border-bottom: 1.5px solid rgb(211, 211, 211);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 1000;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.navBar .btn {
+  padding: 10px 25px;
+}
+.navBar .logoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.navBar .logoDiv span {
+  color: var(--blackColor);
+  font-size: var(--h3FontSize);
+  justify-content: center;
+}
+.navBar .navList .customLink {
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .navBar .menu {
+    border: 1px solid black;
+    position: absolute;
+    width: 70%;
+    top: -100rem;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(255, 255, 255, 0.94);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.8s ease-in-out;
+    -webkit-transition: 0.8s ease-in-out;
+    -moz-transition: 0.8s ease-in-out;
+    -ms-transition: 0.8s ease-in-out;
+    -o-transition: 0.8s ease-in-out;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
+  }
+  .navBar .menu li {
+    font-size: var(--h3FontSize);
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  .navBar .menu li:hover {
+    color: var(--primaryColor);
+    border-bottom: 1.5px solid var(--primaryColor);
+  }
+}
+.navBar .menuIcon .closeIcon {
+  font-size: var(--h1FontSize);
+}
+.navBar .menuIcon .closeIcon:hover {
+  color: var(--primaryColor);
+}
+.navBar .profileWrapper {
+  position: relative;
+  margin-left: 20px;
+}
+.navBar .profileWrapper .profileImage {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.navBar .profileWrapper .profileMenu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  color: white;
+  min-width: 150px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.navBar .profileWrapper .profileMenu p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.navBar .profileWrapper .profileMenu button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.navBar .profileWrapper .profileMenu button:hover {
+  color: #ff5e5e;
+}
+.navBar .profileWrapper .profileMenu.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.navBar .closeIcon {
+  position: absolute;
+  bottom: -15px;
+  right: 50%;
+  left: 50%;
+  color: var(--blackColor);
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+.navBar .showNavbar {
+  top: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .navBar .logoDiv span {
+    font-size: var(--h2FontSize);
+  }
+  .navBar .closeIcon,
+  .navBar .menuIcon {
+    display: none;
+  }
+  .navBar .menu ul {
+    display: flex;
+    gap: 1rem;
+  }
+  .navBar .menu ul li {
+    font-size: var(--h3FontSize);
+    font-weight: 500;
+    padding: 1rem 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  .navBar .menu ul li:hover {
+    color: var(--primaryColor);
+    border-bottom: 1.5px solid var(--primaryColor);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .navBar {
+    padding: 2rem 6rem;
+  }
+  .navBar .menu ul {
+    gap: 6rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .navBar {
+    padding: 2rem 14rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

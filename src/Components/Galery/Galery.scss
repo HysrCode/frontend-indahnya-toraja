@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@300&family=Poppins:wght@200;400;500;600;700;900&display=swap");
+
+// All Project Colors
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  /* Font ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+//style for galery
+.galeryContainer {
+  .secContainer {
+    .pinContainer {
+      top: 3rem;
+      margin: 20px 0;
+      padding: 50px 0;
+      width: 80vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 250px); // Kolom responsif
+      grid-auto-rows: 10px; // Tinggi elemen menyesuaikan konten
+      gap: 15px; // Jarak antar elemen
+      justify-content: center;
+
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 10px; /* Opsional, untuk sudut melengkung */
+
+      .pin {
+        margin: 10px 15px;
+        padding: 0;
+        border-radius: 16px;
+        background-color: var(--primaryColorLight); /* Warna default */
+        overflow: hidden; /* Pastikan konten gambar tidak keluar dari border */
+        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+      }
+
+      .pin:hover {
+        transform: scale(1.1); /* Zoom-in 10% saat hover */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+        cursor: pointer;
+      }
+
+      /* Gaya gambar di dalam pin */
+      .pin img {
+        width: 100%; /* Gambar memenuhi lebar pin */
+        height: 100%; /* Gambar memenuhi tinggi pin */
+        object-fit: cover; /* Memastikan gambar memenuhi area tanpa distorsi */
+        transition: transform 0.4s ease-in-out; /* Animasi zoom-in gambar */
+      }
+
+      /* Menambahkan efek zoom tambahan pada gambar saat hover */
+      .pin:hover img {
+        transform: scale(1.05); /* Zoom gambar di dalam pin */
+      }
+
+      .small {
+        grid-row-end: span 13; /* Ukuran kecil */
+      }
+
+      .medium {
+        grid-row-end: span 16; /* Ukuran sedang */
+      }
+
+      .large {
+        grid-row-end: span 20; /* Ukuran besar */
+      }
+    }
+  }
+}

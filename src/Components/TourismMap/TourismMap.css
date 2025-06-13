@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@300&family=Poppins:wght@200;400;500;600;700;900&display=swap");
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.map-container {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.map-container .map-button p {
+  color: var(--greyText);
+  padding: 10px 14px;
+  font-weight: 500;
+}
+.map-container .map-button {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1000;
+  background-color: var(--primaryColorLight);
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+.map-container .map-button:hover p {
+  background-color: var(--primaryColor);
+  color: var(--blackColor);
+  border-radius: 10px;
+}/*# sourceMappingURL=TourismMap.css.map */

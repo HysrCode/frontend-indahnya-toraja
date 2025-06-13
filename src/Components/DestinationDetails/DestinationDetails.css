@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@300&family=Poppins:wght@200;400;500;600;700;900&display=swap");
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.destinationDetail {
+  margin-top: 20px;
+  padding: 2rem 1rem;
+  font-family: "Poppins", sans-serif;
+  /* Slider utama */
+  /* Wrapper slide */
+  /* Gambar slide */
+  /* Responsif untuk layar kecil (HP) */
+}
+.destinationDetail .detail-title {
+  font-size: var(--h1FontSize);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.destinationDetail .sub-title {
+  display: flex;
+  color: var(--greyText);
+  gap: 10px;
+  font-size: var(--h3FontSize);
+}
+.destinationDetail .sub-title .detail-city {
+  font-size: var(--normalFontSize);
+  margin-bottom: 1rem;
+}
+.destinationDetail .sub-title .detail-city .detail-rating {
+  margin-top: 5px;
+  font-size: var(--h3FontSize);
+  color: var(--greyText);
+}
+.destinationDetail .garis {
+  padding: 0;
+  width: 100%;
+  height: 5px;
+  margin: 0;
+  box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.75);
+}
+.destinationDetail .detail-description {
+  padding: 30px;
+  margin: 30px 0;
+  font-size: var(--h3FontSize);
+  text-align: justify;
+  line-height: var(--h1FontSize);
+  border: 1px solid rgba(173, 172, 169, 0.512);
+  border-radius: 10px;
+  box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.37);
+}
+.destinationDetail .detail-description h2 {
+  margin-bottom: 10px;
+}
+.destinationDetail .detail-description p {
+  color: var(--greyText);
+  font-size: 1rem;
+  padding: 5px 20px;
+}
+.destinationDetail .detail-facility {
+  padding: 40px;
+  background: var(--cardColor);
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.37);
+}
+.destinationDetail .detail-facility h2 {
+  margin: 20x;
+  line-height: 2rem;
+}
+.destinationDetail .detail-facility ul {
+  font-size: 1rem;
+  padding-top: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, auto); /* 4 item per kolom */
+  gap: 8px 16px; /* row-gap dan column-gap */
+  list-style: disc;
+  padding-left: 1rem;
+}
+.destinationDetail .title-facility {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px var(--greyText);
+}
+.destinationDetail .title-contact {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.8rem;
+}
+.destinationDetail .detail-contact {
+  padding: 10px 10px 10px 40px;
+  background: var(--primaryColorLight);
+  border-radius: 10px;
+  margin: 40px 0;
+  box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 2px 6px 13px 0px rgba(0, 0, 0, 0.37);
+}
+.destinationDetail .detail-contact ul {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  padding-left: 10px;
+  line-height: 2rem;
+}
+.destinationDetail .destination-swiper {
+  width: 100%;
+  height: 500px;
+  border-radius: var(--borderRadius);
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background-color: var(--cardColor);
+}
+.destinationDetail .destination-swiper .swiper-button-next,
+.destinationDetail .destination-swiper .swiper-button-prev {
+  color: var(--primaryColor);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+.destinationDetail .destination-swiper .swiper-button-next:hover,
+.destinationDetail .destination-swiper .swiper-button-prev:hover {
+  background-color: var(--primaryColorLight);
+  color: var(--whiteColor);
+}
+.destinationDetail .destination-swiper .swiper-pagination-bullet {
+  background: var(--whiteColor);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.destinationDetail .destination-swiper .swiper-pagination-bullet-active {
+  background: var(--primaryColor);
+  opacity: 1;
+}
+.destinationDetail .slide-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blackColor);
+}
+.destinationDetail .detail-image-slide {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  aspect-ratio: 16/9;
+  border-radius: var(--borderRadius);
+  cursor: pointer;
+}
+.destinationDetail .description {
+  font-size: var(--normalFontSize);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.destinationDetail .rating {
+  font-size: var(--normalFontSize);
+  font-weight: 600;
+  color: var(--primaryColor);
+  margin-bottom: 1rem;
+}
+.destinationDetail .location {
+  background: var(--cardColor);
+  padding: 1rem;
+  border-radius: var(--borderRadius);
+  font-size: var(--smallFontSize);
+  color: var(--blackColor);
+}
+.destinationDetail .loading,
+.destinationDetail .error {
+  text-align: center;
+  font-size: var(--h2FontSize);
+  color: var(--primaryColor);
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .destinationDetail .destinationDetail {
+    padding: 1rem 0.5rem;
+  }
+  .destinationDetail .destinationDetail .detail-title {
+    font-size: var(--h2FontSize);
+  }
+  .destinationDetail .destinationDetail .sub-title {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .destinationDetail .destinationDetail .detail-description {
+    padding: 1rem;
+    margin: 1rem 0;
+    line-height: 1.6rem;
+  }
+  .destinationDetail .destinationDetail .detail-facility {
+    padding: 1.5rem;
+  }
+  .destinationDetail .destinationDetail .detail-facility ul {
+    grid-template-rows: repeat(auto-fit, minmax(1rem, auto));
+    grid-auto-flow: row;
+    font-size: 0.9rem;
+  }
+  .destinationDetail .destinationDetail .destination-swiper {
+    height: 250px;
+  }
+  .destinationDetail .destinationDetail .destination-swiper .swiper-button-next,
+  .destinationDetail .destinationDetail .destination-swiper .swiper-button-prev {
+    padding: 6px;
+  }
+  .destinationDetail .destinationDetail .detail-contact {
+    margin: 1.5rem 0;
+    padding: 1rem;
+  }
+  .destinationDetail .destinationDetail .location {
+    font-size: var(--smallestFontSize);
+    padding: 0.5rem;
+  }
+}
+
+/* Responsif untuk layar kecil (HP) */
+@media (max-width: 768px) {
+  .destinationDetail {
+    padding: 1rem 0.5rem;
+  }
+  .destinationDetail .detail-title {
+    font-size: var(--h2FontSize);
+  }
+  .destinationDetail .sub-title {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .destinationDetail .detail-description {
+    padding: 1rem;
+    margin: 1rem 0;
+    line-height: 1.6rem;
+  }
+  .destinationDetail .detail-facility {
+    padding: 1.5rem;
+  }
+  .destinationDetail .detail-facility ul {
+    grid-template-rows: repeat(auto-fit, minmax(1rem, auto));
+    grid-auto-flow: row;
+    font-size: 0.9rem;
+  }
+  .destinationDetail .destination-swiper {
+    height: 250px;
+  }
+  .destinationDetail .destination-swiper .swiper-button-next,
+  .destinationDetail .destination-swiper .swiper-button-prev {
+    padding: 6px;
+  }
+  .destinationDetail .detail-contact {
+    margin: 1.5rem 0;
+    padding: 1rem;
+  }
+  .destinationDetail .location {
+    font-size: var(--smallestFontSize);
+    padding: 0.5rem;
+  }
+}/*# sourceMappingURL=DestinationDetails.css.map */
