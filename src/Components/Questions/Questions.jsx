@@ -33,7 +33,7 @@ const Questions = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/questions", {
+      await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/questions`, {
         email,
         message,
       });
@@ -87,7 +87,10 @@ const Questions = () => {
         <div className="form">
           <div className="secHeading">
             <h4>Masih Penasaran, Ingin Tahu Lebih?</h4>
-            <p>Hubungi Admin dengan mengirimkan pertanyaan dan nama email kamu dibawah</p>
+            <p>
+              Hubungi Admin dengan mengirimkan pertanyaan dan nama email kamu
+              dibawah
+            </p>
           </div>
           <form className="formContent grid" onSubmit={handleSubmit}>
             <input
