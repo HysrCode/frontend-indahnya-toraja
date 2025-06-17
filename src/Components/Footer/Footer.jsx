@@ -43,14 +43,9 @@ const Footer = () => {
             <span className="span-name">JTIK 2018</span>
           </li>
           <li>
-            <a href="https://www.facebook.com/umran.dewi" target="_blank">
-              Umran S <ImFacebook className="icon-footer" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/rannn.s12/" target="_blank">
-              rann.s12 <AiFillInstagram className="icon-footer" />
-            </a>
+            <span className="email">
+              <FiMapPin /> Pulau Marabatuan, Kalimantan Selatan, Indonesia{" "}
+            </span>
           </li>
         </div>
 
@@ -72,10 +67,16 @@ const Footer = () => {
           >
             umranktb111213@gmail.com <MdAllInbox />
           </a>
-
-          <span className="email">
-            <FiMapPin /> Pulau Marabatuan, Kalimantan Selatan, Indonesia{" "}
-          </span>
+          <a
+            href="https://www.facebook.com/umran.dewi"
+            target="_blank"
+            className="email"
+          >
+            Umran S <ImFacebook className="icon-footer" />
+          </a>
+          <a href="https://www.instagram.com/rannn.s12/" target="_blank">
+            rann.s12 <AiFillInstagram className="icon-footer" />
+          </a>
         </div>
       </div>
     </div>
