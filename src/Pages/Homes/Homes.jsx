@@ -5,6 +5,7 @@ import Reviews from "../../Components/Reviews/Reviews";
 import Questions from "../../Components/Questions/Questions";
 import Subscribe from "../../Components/Subscribe/Subscirbe";
 import Destinations from "../../Components/Destinations/Destinations";
+import Biodata from "../../Components/Biodata/Biodata";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -31,6 +32,7 @@ const Homes = () => {
       <Reviews />
       <Questions />
       <Subscribe />
+      <Biodata/>
     </div>
   );
 };

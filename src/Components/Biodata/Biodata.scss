@@ -1,0 +1,189 @@
+// components/AuthorLayout.scss
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+// All Project Colors
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  /* Font ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: var(--h1FontSize);
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--greyText);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+
+.author-layout {
+  display: flex;
+  //   min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bgColor);
+  color: var(--blackColor);
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.author-panel {
+  margin: 20px 0;
+  flex: 0 0 35%;
+  background: linear-gradient(
+    135deg,
+    var(--primaryColorLight),
+    var(--primaryColor)
+  );
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  border-radius: 10px;
+  color: white;
+  .author-identity {
+    text-align: center;
+    color: var(--whiteColor);
+
+    .logo-placeholder {
+      margin-bottom: 1.5rem;
+
+      .logo-circle {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-color: var(--whiteColor);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+        &::after {
+          content: "LOGO";
+          color: var(--primaryColor);
+          font-weight: 700;
+          font-size: var(--h2FontSize);
+        }
+      }
+    }
+
+    .author-name {
+      font-size: var(--h1FontSize);
+      font-weight: 700;
+      margin-top: 1rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.bio-panel {
+  flex: 1;
+  padding: 3rem;
+  background-color: var(--whiteColor);
+  margin: 0;
+
+  h2 {
+    color: var(--primaryColor);
+    font-size: var(--h1FontSize);
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background-color: var(--primaryColor);
+      border-radius: var(--borderRadius);
+    }
+  }
+
+  .bio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .bio-card {
+    background: var(--cardColor);
+    padding: 1.8rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    h3 {
+      font-size: var(--h2FontSize);
+      color: var(--primaryColor);
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: var(--normalFontSize);
+      margin: 0.5rem 0;
+      color: var(--blackColor);
+
+      &:first-of-type {
+        font-weight: 500;
+        color: var(--primaryColor);
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .author-layout {
+    flex-direction: column;
+  }
+
+  .author-panel {
+    padding: 2rem 1rem;
+
+    .author-identity {
+      .logo-circle {
+        width: 140px;
+        height: 140px;
+      }
+
+      .author-name {
+        font-size: var(--h2FontSize);
+      }
+    }
+  }
+
+  .bio-panel {
+    padding: 2rem 1.5rem;
+  }
+}
