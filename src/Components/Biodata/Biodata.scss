@@ -23,6 +23,7 @@
   --smallestFontSize: 0.75rem;
   --borderRadius: 3rem;
 }
+
 .title-bio {
   font-weight: 600;
   display: flex;
@@ -30,8 +31,6 @@
   font-size: var(--h1FontSize);
   margin: 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--greyText);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
 }
 
 
