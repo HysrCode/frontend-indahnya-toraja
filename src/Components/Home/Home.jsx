@@ -17,7 +17,7 @@ const Home = () => {
             </div>
 
             <div className="sectionText">
-                <h1>Kunjungi Toraja Negeri Atas Awan</h1>
+                <h1>Kunjungi Toraja Negeri di Atas Awan</h1>
                 <p>Lihatlah tempat-tempat wisata yang ada di Toraja dan buat perjalananmu menyenangkan.
                 </p>
                  {/* <button className="btn flex">Ayok Lihat  <AiOutlineSwapRight/></button>     */}

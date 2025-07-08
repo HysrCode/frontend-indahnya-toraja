@@ -6,7 +6,7 @@ import LogoUnm from "../../../public/images/logo-unm.jpg";
 const Biodata = () => {
   return (
     <div className="container">
-      <h1 className="title"> Biodata Peneliti</h1>
+      <div className="title-bio"> Biodata Peneliti</div>
       <div className=" author-layout">
         {/* Panel Kiri - Logo & Nama Penulis */}
         <div className="author-panel">

@@ -23,8 +23,8 @@
   --smallestFontSize: 0.75rem;
   --borderRadius: 3rem;
 }
-
-h1 {
+.title-bio {
+  font-weight: 600;
   display: flex;
   justify-content: center;
   font-size: var(--h1FontSize);
@@ -107,7 +107,7 @@ h1 {
 
   h2 {
     color: var(--primaryColor);
-    font-size: var(--h1FontSize);
+    font-size: 1.7rem;
     margin-bottom: 2rem;
     position: relative;
     padding-bottom: 0.5rem;
